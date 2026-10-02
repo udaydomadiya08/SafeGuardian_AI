@@ -1,0 +1,39 @@
+{
+  "total_train_samples": 244,
+  "total_val_samples": 52,
+  "total_test_samples": 54,
+  "class_names": [
+    "NO_RELEVANT_EVENT",
+    "PERSON",
+    "PERSON_ON_GROUND",
+    "FALL_LIKE_POSTURE",
+    "MULTI_PERSON_ACTIVITY",
+    "SMOKE_FIRE_LIKE",
+    "UNKNOWN"
+  ],
+  "train_class_distribution": {
+    "NO_RELEVANT_EVENT": 122,
+    "PERSON": 40,
+    "MULTI_PERSON_ACTIVITY": 77,
+    "SMOKE_FIRE_LIKE": 5
+  },
+  "val_class_distribution": {
+    "NO_RELEVANT_EVENT": 23,
+    "PERSON": 10,
+    "MULTI_PERSON_ACTIVITY": 18,
+    "SMOKE_FIRE_LIKE": 1
+  },
+  "test_class_distribution": {
+    "NO_RELEVANT_EVENT": 25,
+    "PERSON": 8,
+    "MULTI_PERSON_ACTIVITY": 17,
+    "SMOKE_FIRE_LIKE": 4
+  },
+  "subject_leakage_detected": false,
+  "overlapping_subjects": [],
+  "dataset_name": "PennFudanPed Database + FireNET & Wildfire Smoke Subsets",
+  "license": "Academic and Research Use (PennFudan) / MIT & CC (FireNET)",
+  "url": "https://www.cis.upenn.edu/~jshi/ped_html/",
+  "split_strategy": "70% Train, 15% Validation, 15% Test partitioned deterministically by image ID",
+  "notes": "Ground truth labels reflect pedestrian presence, multi-person activity, and fire/smoke visuals. PERSON_ON_GROUND and FALL_LIKE_POSTURE are honestly documented as 0 samples in this upright pedestrian set. Vision model produces visual evidence only; a single frame NEVER declares an active emergency directly."
+}

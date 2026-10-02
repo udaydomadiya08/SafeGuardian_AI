@@ -1,0 +1,176 @@
+{
+  "accuracy": 0.42592592592592593,
+  "precision_macro": 0.11274509803921569,
+  "recall_macro": 0.23,
+  "f1_macro": 0.1513157894736842,
+  "per_class_precision": {
+    "NO_RELEVANT_EVENT": 0.45098039215686275,
+    "PERSON": 0.0,
+    "PERSON_ON_GROUND": 0.0,
+    "FALL_LIKE_POSTURE": 0.0,
+    "MULTI_PERSON_ACTIVITY": 0.0,
+    "SMOKE_FIRE_LIKE": 0.0,
+    "UNKNOWN": 0.0
+  },
+  "per_class_recall": {
+    "NO_RELEVANT_EVENT": 0.92,
+    "PERSON": 0.0,
+    "PERSON_ON_GROUND": 0.0,
+    "FALL_LIKE_POSTURE": 0.0,
+    "MULTI_PERSON_ACTIVITY": 0.0,
+    "SMOKE_FIRE_LIKE": 0.0,
+    "UNKNOWN": 0.0
+  },
+  "per_class_f1": {
+    "NO_RELEVANT_EVENT": 0.6052631578947368,
+    "PERSON": 0.0,
+    "PERSON_ON_GROUND": 0.0,
+    "FALL_LIKE_POSTURE": 0.0,
+    "MULTI_PERSON_ACTIVITY": 0.0,
+    "SMOKE_FIRE_LIKE": 0.0,
+    "UNKNOWN": 0.0
+  },
+  "confusion_matrix": [
+    [
+      23,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      17,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "class_names": [
+    "NO_RELEVANT_EVENT",
+    "PERSON",
+    "PERSON_ON_GROUND",
+    "FALL_LIKE_POSTURE",
+    "MULTI_PERSON_ACTIVITY",
+    "SMOKE_FIRE_LIKE",
+    "UNKNOWN"
+  ],
+  "safety_observations": {
+    "per_class_confusion": {
+      "NO_RELEVANT_EVENT": [
+        23,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "PERSON": [
+        7,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "PERSON_ON_GROUND": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "FALL_LIKE_POSTURE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "MULTI_PERSON_ACTIVITY": [
+        17,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "SMOKE_FIRE_LIKE": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "UNKNOWN": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "safety_boundary_note": "The vision classifier outputs visual presence evidence only (e.g. person, multi-person activity, flame visual). A single frame NEVER triggers an active emergency directly; evidence must be corroborated by temporal analysis and multimodal sensory verification."
+  },
+  "total_test_samples": 54
+}

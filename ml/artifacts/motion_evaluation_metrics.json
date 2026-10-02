@@ -1,0 +1,76 @@
+{
+  "accuracy": 0.8622327790973872,
+  "precision_macro": 0.8477858151023289,
+  "recall_macro": 0.816364848222825,
+  "f1_macro": 0.829389872464694,
+  "per_class_precision": {
+    "NORMAL": 0.8777472527472527,
+    "FALL": 0.0,
+    "IMPACT": 0.0,
+    "UNUSUAL_MOTION": 0.817824377457405
+  },
+  "per_class_recall": {
+    "NORMAL": 0.9323929961089494,
+    "FALL": 0.0,
+    "IMPACT": 0.0,
+    "UNUSUAL_MOTION": 0.7003367003367004
+  },
+  "per_class_f1": {
+    "NORMAL": 0.904245283018868,
+    "FALL": 0.0,
+    "IMPACT": 0.0,
+    "UNUSUAL_MOTION": 0.75453446191052
+  },
+  "confusion_matrix": [
+    [
+      1917,
+      0,
+      0,
+      139
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      267,
+      0,
+      0,
+      624
+    ]
+  ],
+  "class_names": [
+    "NORMAL",
+    "FALL",
+    "IMPACT",
+    "UNUSUAL_MOTION"
+  ],
+  "safety_observations": {
+    "UNUSUAL_MOTION_true_positives": 624,
+    "UNUSUAL_MOTION_false_negatives": 267,
+    "UNUSUAL_MOTION_false_positives": 139,
+    "FALL_false_positives_on_normal": 0,
+    "IMPACT_false_positives_on_normal": 0,
+    "critical_note": "UCI HAR dataset contains only ADL data without real fall/impact events. Therefore, FALL and IMPACT recall is 0.0, and the on-device safety engine relies on multimodal risk fusion and the tested heuristic fallback detector."
+  },
+  "total_test_samples": 2947,
+  "test_subjects": [
+    2,
+    4,
+    9,
+    10,
+    12,
+    13,
+    18,
+    20,
+    24
+  ]
+}

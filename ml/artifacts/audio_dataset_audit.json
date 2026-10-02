@@ -1,0 +1,64 @@
+{
+  "total_train_samples": 96,
+  "total_val_samples": 32,
+  "total_test_samples": 32,
+  "class_names": [
+    "NORMAL",
+    "SHOUT",
+    "DISTRESS_LIKE",
+    "IMPACT_SOUND",
+    "GLASS_BREAK_LIKE",
+    "ALARM_LIKE",
+    "UNKNOWN"
+  ],
+  "train_class_distribution": {
+    "NORMAL": 30,
+    "SHOUT": 6,
+    "IMPACT_SOUND": 12,
+    "GLASS_BREAK_LIKE": 6,
+    "ALARM_LIKE": 12,
+    "UNKNOWN": 30
+  },
+  "val_class_distribution": {
+    "NORMAL": 10,
+    "SHOUT": 2,
+    "IMPACT_SOUND": 4,
+    "GLASS_BREAK_LIKE": 2,
+    "ALARM_LIKE": 4,
+    "UNKNOWN": 10
+  },
+  "test_class_distribution": {
+    "NORMAL": 10,
+    "SHOUT": 2,
+    "IMPACT_SOUND": 4,
+    "GLASS_BREAK_LIKE": 2,
+    "ALARM_LIKE": 4,
+    "UNKNOWN": 10
+  },
+  "subject_leakage_detected": false,
+  "overlapping_subjects": [],
+  "dataset_name": "ESC-50: Dataset for Environmental Sound Classification",
+  "license": "CC BY-NC 3.0",
+  "url": "https://github.com/karoldvl/ESC-50",
+  "fold_split_strategy": "Folds 1-3 (Train), Fold 4 (Validation), Fold 5 (Test)",
+  "category_mapping": {
+    "breathing": "NORMAL",
+    "footsteps": "NORMAL",
+    "snoring": "NORMAL",
+    "drinking_sipping": "NORMAL",
+    "clock_tick": "NORMAL",
+    "crying_baby": "SHOUT",
+    "screaming": "DISTRESS_LIKE",
+    "door_wood_knock": "IMPACT_SOUND",
+    "car_horn": "IMPACT_SOUND",
+    "glass_breaking": "GLASS_BREAK_LIKE",
+    "siren": "ALARM_LIKE",
+    "clock_alarm": "ALARM_LIKE",
+    "rain": "UNKNOWN",
+    "sea_waves": "UNKNOWN",
+    "wind": "UNKNOWN",
+    "crackling_fire": "UNKNOWN",
+    "coughing": "UNKNOWN"
+  },
+  "notes": "Neutral acoustic categories only (SHOUT_LIKE, IMPACT_SOUND, GLASS_BREAK_LIKE, ALARM_LIKE, NORMAL, UNKNOWN). Does NOT claim forensic attack or crime detection. Model provides acoustic evidence."
+}

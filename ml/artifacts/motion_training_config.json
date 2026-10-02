@@ -1,0 +1,19 @@
+{
+  "architecture": "1D Temporal CNN",
+  "input_shape": [
+    1,
+    16
+  ],
+  "output_classes": [
+    "NORMAL",
+    "FALL",
+    "IMPACT",
+    "UNUSUAL_MOTION"
+  ],
+  "optimizer": "Adam",
+  "learning_rate": 0.002,
+  "batch_size": 32,
+  "epochs": 20,
+  "random_seed": 42,
+  "total_parameters": 1140
+}

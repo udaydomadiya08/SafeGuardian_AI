@@ -1,0 +1,24 @@
+{
+  "architecture": "Depthwise Separable CNN",
+  "input_shape": [
+    1,
+    224,
+    224,
+    3
+  ],
+  "output_classes": [
+    "NO_RELEVANT_EVENT",
+    "PERSON",
+    "PERSON_ON_GROUND",
+    "FALL_LIKE_POSTURE",
+    "MULTI_PERSON_ACTIVITY",
+    "SMOKE_FIRE_LIKE",
+    "UNKNOWN"
+  ],
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "batch_size": 16,
+  "epochs": 15,
+  "random_seed": 42,
+  "total_parameters": 5895
+}

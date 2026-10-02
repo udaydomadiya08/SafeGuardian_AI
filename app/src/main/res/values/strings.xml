@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SafeGuardian</string>
+    <string name="notification_channel_guardian">Guardian Monitoring</string>
+    <string name="notification_channel_emergency">Emergency Alerts</string>
+    <string name="notification_guardian_title">SafeGuardian Active</string>
+    <string name="notification_guardian_text">Monitoring your safety</string>
+    <string name="notification_emergency_title">Emergency Detected</string>
+</resources>

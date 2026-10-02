@@ -1,0 +1,23 @@
+{
+  "architecture": "Separable 2D CNN",
+  "input_shape": [
+    1,
+    16,
+    16
+  ],
+  "output_classes": [
+    "NORMAL",
+    "SHOUT",
+    "DISTRESS_LIKE",
+    "IMPACT_SOUND",
+    "GLASS_BREAK_LIKE",
+    "ALARM_LIKE",
+    "UNKNOWN"
+  ],
+  "optimizer": "Adam",
+  "learning_rate": 0.003,
+  "batch_size": 16,
+  "epochs": 25,
+  "random_seed": 42,
+  "total_parameters": 1376
+}

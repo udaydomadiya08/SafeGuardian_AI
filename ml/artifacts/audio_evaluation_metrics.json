@@ -1,0 +1,179 @@
+{
+  "accuracy": 0.46875,
+  "precision_macro": 0.2425925925925926,
+  "recall_macro": 0.35000000000000003,
+  "f1_macro": 0.27883040935672515,
+  "per_class_precision": {
+    "NORMAL": 0.5555555555555556,
+    "SHOUT": 0.0,
+    "DISTRESS_LIKE": 0.0,
+    "IMPACT_SOUND": 0.5,
+    "GLASS_BREAK_LIKE": 0.0,
+    "ALARM_LIKE": 0.0,
+    "UNKNOWN": 0.4
+  },
+  "per_class_recall": {
+    "NORMAL": 0.5,
+    "SHOUT": 0.0,
+    "DISTRESS_LIKE": 0.0,
+    "IMPACT_SOUND": 1.0,
+    "GLASS_BREAK_LIKE": 0.0,
+    "ALARM_LIKE": 0.0,
+    "UNKNOWN": 0.6
+  },
+  "per_class_f1": {
+    "NORMAL": 0.5263157894736842,
+    "SHOUT": 0.0,
+    "DISTRESS_LIKE": 0.0,
+    "IMPACT_SOUND": 0.6666666666666666,
+    "GLASS_BREAK_LIKE": 0.0,
+    "ALARM_LIKE": 0.0,
+    "UNKNOWN": 0.48
+  },
+  "confusion_matrix": [
+    [
+      5,
+      0,
+      0,
+      1,
+      0,
+      0,
+      4
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    [
+      3,
+      0,
+      0,
+      1,
+      0,
+      0,
+      6
+    ]
+  ],
+  "class_names": [
+    "NORMAL",
+    "SHOUT",
+    "DISTRESS_LIKE",
+    "IMPACT_SOUND",
+    "GLASS_BREAK_LIKE",
+    "ALARM_LIKE",
+    "UNKNOWN"
+  ],
+  "safety_observations": {
+    "total_alert_false_positives": 4,
+    "total_alert_false_negatives": 8,
+    "per_class_confusion": {
+      "NORMAL": [
+        5,
+        0,
+        0,
+        1,
+        0,
+        0,
+        4
+      ],
+      "SHOUT": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "DISTRESS_LIKE": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "IMPACT_SOUND": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      "GLASS_BREAK_LIKE": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "ALARM_LIKE": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "UNKNOWN": [
+        3,
+        0,
+        0,
+        1,
+        0,
+        0,
+        6
+      ]
+    },
+    "safety_boundary_note": "Acoustic categories indicate audio evidence only (e.g. scream-like frequency, sudden transient, alarm tone). They never trigger ACTIVE_EMERGENCY without cross-modal confirmation from motion and risk engine."
+  },
+  "total_test_samples": 32,
+  "test_fold": 5
+}
